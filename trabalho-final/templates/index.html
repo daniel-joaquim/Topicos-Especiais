@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="../static/style.css">
     <link rel="manifest" href="../static/app.webmanifest" crossorigin="use-credentials">
-    <link rel="icon" href="../img/cronometro.png" sizes="225x225">
+    <link rel="icon" href="../static/img/cronometro.png" sizes="225x225">
 </head>
 <body>
     <div class="container">
@@ -21,6 +21,11 @@
             <button onclick="resetTimer()">Zerar</button>
         </div>
     </div>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="../static/script.js"></script>
 </body>
+<script type="module">
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register(new URL('../static/sw.js', import.meta.url));
+    }
+</script>
 </html>

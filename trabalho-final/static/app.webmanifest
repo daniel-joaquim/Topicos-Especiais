@@ -1,13 +1,13 @@
 {
     "name": "Cronometro",
     "short_name": "Cronometro",
-    "start_url": "http://127.0.0.1:5000",
+    "start_url": "http://127.0.0.1:5000/",
     "display": "standalone",
     "background_color": "#fff",
     "description": "Cronometro!",
     "icons": [
         {
-            "src": "/img/cronometro.png",
+            "src": "/static/img/cronometro.png",
             "sizes": "225x225",
             "type": "image/png"
         }

@@ -41,3 +41,31 @@ button:hover {
     color: white;
     border: none;
 }
+/* Responsividade para tablets e smartphones */
+@media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Responsividade para smartphones menores */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
